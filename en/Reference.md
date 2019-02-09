@@ -1,18 +1,12 @@
-<!-- TITLE: Old Manual -->
-<!-- SUBTITLE: це старий мануал який писав Влад, його треба вичитати, пофіксити старі картинки і додати нові. ДЖЕРЕЛО https://gitlab.com/omw/megabot-web/wikis/home-->
-<!--// ##### ПОВНІСТЮ ВИЧИТАТИ ЦЕЙ ТЕКСТ І КАРТИНКИ ЗАЛИТИ ОРИГІНАЛЬНІ ##### //-->
-<!--// ##### ДЖЕРЕЛО https://gitlab.com/omw/megabot-web/wikis/home ##### //-->
-
-
-# Wiki of MegaBot
 ## State variables
 There are two session state variables: `global` and `data`. Type is JavaScript dict.
 
 `global` context in fact, contains global data of session, you can use it for storing some variables using `js` method (see below).
 
 `data` contains result of prev node, when you use `js` you can change it value too.
+
 ##### Usage
-In POST data: `{"some_field": "${data.some_var}"}` (`global` same)
+In Request data: `{"some_field": "${data.some_var}"}` (`global` same)
 
 In `js` method: `{"code": "data.some_var"}` - so, use it as is (`global` same)
 
@@ -49,7 +43,7 @@ where `condN` - is usual condition, e.g., `{"key": "value"}`
 
 You can use OR for conditions by creating multiply conditions like
 
-![20190201 210300](/uploads/old-manual-en/20190201-210300.png "")
+![01](images/01.png)
 
 You can use regexp in condition: `{"key": "!REGEXP_MODE!YOUR_REGEXP"}`, 
 
@@ -86,7 +80,7 @@ You can use remote API: GET, POST, PUT, PUTCH, DELETE Http methods and custom he
 ### Host Aliases
 You can use aliases for hosts of remote API in top left of editing node panel, e.g.
 
-![20190201 211100](/uploads/old-manual-en/20190201-211100.png "")
+![02](images/02.png)
 
 Note, that you add headers for those hosts, if needed.
 Also you can use your global vars in part of host address, it very useful e.g. for apiKeys. On screen above host is 
@@ -95,7 +89,7 @@ Also you can use your global vars in part of host address, it very useful e.g. f
 ### URL Shortcuts
 You can create URL shortcuts for remote API in top left of editing node panel, e.g.
 
-![20190201 211101](/uploads/old-manual-en/20190201-211101.png "")
+![03](images/03.png)
 
 **Key** is your name for API method, like GetMe, choose it on your test
 
@@ -132,7 +126,7 @@ Example:
 
 Value `global.a` is  `5`. 
 
-Then we execute `js` node with such POST data: `{"code": "global.b=global.a*2"}`
+Then we execute `js` node with such Request data: `{"code": "global.b=global.a*2"}`
 
 And in next node `global.b` value is `10`. 
 
@@ -159,7 +153,7 @@ Use GET or POST method. Empty Data.
 ##### Output:
 Like this
 
-![image](/uploads/5ea113f74837688647a828eed49075f5/image.png)
+![04](images/04.png)
 
 ### DB methods
 There are mongoDB functions for work with JSON data.
