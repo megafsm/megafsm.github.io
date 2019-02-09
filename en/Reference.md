@@ -1,3 +1,6 @@
+---
+title: Reference
+---
 ## State variables
 There are two session state variables: `global` and `data`. Type is JavaScript dict.
 
