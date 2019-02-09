@@ -8,6 +8,6 @@
 
 # ОГЛАВЛЕНИЕ
 
-* EN  - [MegaBot Reference]( https://wiki.mega-bot.com/en/old-manual )
-* RU - [Как написать своего первого бота с помощью MegaBot]( https://wiki.mega-bot.com/ru/first-telegram-bot ) 
-* 
+* EN  - [MegaBot Reference]( /en/old-manual )
+* RU - [Как написать своего первого бота с помощью MegaBot]( /ru/first-telegram-bot ) 
+
