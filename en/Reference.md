@@ -103,11 +103,11 @@ You can set node to pause, by clicking **Wait** button in bottom of editor, so b
 Wait is not supported for Telegram channels updates (new posts and its editings): if node with wait will get update from channel, then error `"Error! Node <NodeName>. Wait is not supported, so we just go to next Node!"` will be printed in Debug Console and bot's work will be ended.
 
 ## Methods (URLs)
-#### [goback] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/ 
+#### [goback]
 TBD
-#### [StartFSM] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/
+#### [StartFSM]
 TBD
-#### [SendMessage] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/
+#### [SendMessage]
 Send message to social. 
 
 #### Currently supported only Telegram.
@@ -132,7 +132,7 @@ And in next node `global.b` value is `10`.
 
 So, we just create new field `b` in `global` dict and assign it value to `global.a` value multiplied by 2.
 
-#### [timeout] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/
+#### [timeout]
 Wait for `s` seconds.
 ##### Input:
 Use POST method. Data:
@@ -145,7 +145,7 @@ On success: `{"status": "success", "message": "Slept well for <s> seconds"}`
 
 On Error: `{"status": "error", "message": ErrorMsg}`
 
-#### [debug] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/
+#### [debug]
 Print `data` and `global` objects to Developer's Console.
 ##### Input:
 Use GET or POST method. Empty Data.
@@ -162,7 +162,7 @@ Use DocumentId as `_id` - type string, not `ObjectId` (internaly it stored as us
 Input method is POST. 
 Output will stored id `data`.
 
-#### [ReadDB] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/
+#### [ReadDB]
 ##### Input:
 `{"collection": CollectionName, "query": MongoFindQuery, "projection:" MongoProjectionQuery,["sort": SortQuery], ["limit": int]}`
 
@@ -177,21 +177,24 @@ On success: `{"status": "success", "data": ArrayOfDocuments, "found_count": int}
 On Error: `{"status": "error", "message": ErrorMsg}`
 
 See: https://docs.mongodb.com/getting-started/python/query/
-#### [CountDB] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py/
+
+#### [CountDB]
 Return count of documents in the collection
+
 ##### Input:
 `{"collection": CollectionName, "query": MongoFindQuery}`
 
 where
 
 `MongoFindQuery` - optional, `{"some_field1": "some_value1", ...}`, if not specified - return count of all documents in the collection
+
 ##### Output:
 On success: `{"status": "success", "count": int}`
 
 On Error: `{"status": "error", "message": ErrorMsg}`
 
 See: https://docs.mongodb.com/manual/reference/method/db.collection.count/
-#### [WriteDB] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py
+#### [WriteDB]
 ##### Input:
 `{"collection": CollectionName, "query": Documents}`
 
@@ -206,7 +209,7 @@ On success: `{"status": "success", "inserted_ids": inserted_ids}`
 On Error: `{"status": "error", "message": ErrorMsg}`
 
 See: https://docs.mongodb.com/getting-started/python/insert/
-#### [UpdateDB] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py
+#### [UpdateDB]
 Update specilic fields of Documents, for full replace see ReplaceDB below.
 
 ##### Input:
@@ -233,7 +236,7 @@ On success: `{"status": "success", "modified_count": modified_count}`
 On Error: `{"status": "error", "message": ErrorMsg}`
 
 See: https://docs.mongodb.com/getting-started/python/update/#update-specific-fields
-#### [ReplaceDB] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py
+#### [ReplaceDB]
 ##### Input:
 Replace entiry Document, except _id field.
 
@@ -257,7 +260,8 @@ On success: `{"status": "success", "modified_count": modified_count}`
 On Error: `{"status": "error", "message": ErrorMsg}`
 
 See: https://docs.mongodb.com/getting-started/python/update/#replace-a-document
-#### [DeleteDB] https://gitlab.com/omw/megafsm/tree/master/mega-fsm/meganodes/megafsm.py
+#### [DeleteDB]
+
 Delete 
 ##### Input:
 {"collection": CollectionName, "query": MongoUpdateQuery, "many": Boolean}
