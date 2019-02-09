@@ -1,4 +1,6 @@
-<!-- TITLE: Draft 2018 -->
+---
+title: Draft 2018
+---
 <!-- SUBTITLE: A quick summary of Draft 2018 -->
 <!--// https://docs.google.com/document/d/1JpepRRYAnX0lpNr6QWskam1lQumMG5emCsWesKAyAp8/edit?usp=sharing //-->
 # Создание бота
