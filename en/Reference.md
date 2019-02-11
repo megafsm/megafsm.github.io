@@ -46,7 +46,7 @@ where `condN` - is usual condition, e.g., `{"key": "value"}`
 
 You can use OR for conditions by creating multiply conditions like
 
-![01](images/01.png)
+![001](img/001.png)
 
 You can use regexp in condition: `{"key": "!REGEXP_MODE!YOUR_REGEXP"}`, 
 
@@ -83,7 +83,7 @@ You can use remote API: GET, POST, PUT, PUTCH, DELETE Http methods and custom he
 ### Host Aliases
 You can use aliases for hosts of remote API in top left of editing node panel, e.g.
 
-![02](images/02.png)
+![002](img/002.png)
 
 Note, that you add headers for those hosts, if needed.
 Also you can use your global vars in part of host address, it very useful e.g. for apiKeys. On screen above host is 
@@ -92,7 +92,7 @@ Also you can use your global vars in part of host address, it very useful e.g. f
 ### URL Shortcuts
 You can create URL shortcuts for remote API in top left of editing node panel, e.g.
 
-![03](images/03.png)
+![003](img/003.png)
 
 **Key** is your name for API method, like GetMe, choose it on your test
 
@@ -156,7 +156,7 @@ Use GET or POST method. Empty Data.
 ##### Output:
 Like this
 
-![04](images/04.png)
+![004](img/004.png)
 
 ### DB methods
 There are mongoDB functions for work with JSON data.
