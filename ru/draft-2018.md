@@ -88,7 +88,7 @@ https://t.me/BotFather
 
 ![027](img/027.png "переходим к полю - Action,  днем в нём  выбираем - SendMessage")
 
-![028](img/028.png "") 
+![028](img/028.png) 
 
 **SendMessage** -  это непосредственно обращение API Telegram для  отправки сообщений
 
