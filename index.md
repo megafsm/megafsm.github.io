@@ -14,5 +14,3 @@ title: Home
 * EN - [MegaBot Reference]( /en/reference )
 * RU - [Draft 2018]( /ru/draft-2018 )
 * RU - [Твой первый Телеграм бот]( /ru/first-telegram-bot ) //Как написать своего первого бота с помощью MegaBot
-* RU - [Договор оферты]( /ru/offer )
-* RU - [Схема проекта]( /ru/project-scheme )
