@@ -11,6 +11,6 @@ title: Home
 
 # ОГЛАВЛЕНИЕ
 
-* EN - [MegaBot Reference]( /en/reference )
+* EN - [MegaBot Reference]( /en/Reference )
 * RU - [Draft 2018]( /ru/draft-2018 )
 * RU - [Твой первый Телеграм бот]( /ru/first-telegram-bot ) //Как написать своего первого бота с помощью MegaBot
